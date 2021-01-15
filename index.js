@@ -1,7 +1,7 @@
 // index.js
-const { fetchMyIP } = require('./iss');
-const { fetchCoordsByIP }  = require ('./iss')
-const { fetchISSFlyOverTimes } = require('./iss');
+// const { fetchMyIP } = require('./iss');
+// const { fetchCoordsByIP }  = require ('./iss')
+// const { fetchISSFlyOverTimes } = require('./iss');
 const { nextISSTimesForMyLocation } = require('./iss');
 
 // fetchMyIP((error, ip) => {
@@ -47,3 +47,5 @@ nextISSTimesForMyLocation((error, passTimes) => {
   // success, print out the deets!
   printPassTimes(passTimes);
 });
+
+module.exports = {printPassTimes}
